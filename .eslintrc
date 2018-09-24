@@ -1,5 +1,5 @@
 {
-  "estends": "airbnb-base",
+  "extends": "airbnb-base",
   "plugins": ["standard", "import"],
   "env": {
     "node": true,
@@ -10,6 +10,7 @@
     "curly": ["error", "all"],
     "indent": ["error", 2, { "MemberExpression": 1, "SwitchCase": 1 }],
     "consistent-return": "off",
+    "class-methods-use-this": "off",
     "arrow-parens": ["error", "always"],
     "func-names": "off",
     "global-require": "off",
@@ -18,7 +19,7 @@
     "no-bitwise": "off",
     "no-case-declarations": "off",
     "no-multi-assign": "off",
-    "no-tabs": ["off"],
+    "no-tabs": "off",
     "no-param-reassign": "off",
     "no-shadow": "off",
     "no-return-assign": "off",
