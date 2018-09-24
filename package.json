@@ -1,0 +1,23 @@
+{
+  "author": "Joaquin Briceno <joaquinbriceno1@gmail.com>",
+  "name": "node-phraseapp",
+  "version": "0.0.1",
+  "description": "Wrapper for Phraseapp REST API",
+  "keywords": [
+    "phraseapp",
+    "api",
+    "rest",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Joaquin6/node-phraseapp"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "request": "^2.48.0"
+  },
+  "engines": {
+    "node": ">=10"
+  }
+}
