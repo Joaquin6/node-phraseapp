@@ -14,7 +14,10 @@ export default class Phraseapp {
 
     Object.defineProperties(this, {
       apiPath: {
-        value: opts.apiPath || 'https://phraseapp.com/api/v1',
+        value: opts.apiPath || 'https://api.phraseapp.com/api/',
+      },
+      apiVersion: {
+        value: opts.apiVersion || 'v2',
       },
       tokenOpts: {
         value(cOpts, url) {
@@ -175,21 +178,18 @@ export default class Phraseapp {
 
     request(opts, (error, response, body) => {
       if (error) {
-        callback(error);
-        return;
+        return callback(error);
       }
       if (response.statusCode < 200 || response.statusCode >= 300) {
         const err = new Error('Non 200 response');
         err.statusCode = response.statusCode;
         err.message = body;
-        callback(err, body);
-        return;
+        return callback(err, body);
       }
       if (typeof body !== 'string' || (
         response.headers['content-type'].indexOf('application/json') === -1
-                && response.headers['content-type'].indexOf('text/json') === -1)) {
-        callback(null, body);
-        return;
+        && response.headers['content-type'].indexOf('text/json') === -1)) {
+        return callback(null, body);
       }
 
       let parseErr = null;

@@ -1,0 +1,5 @@
+{
+  "joaquinsPackageWatch.enable": true,
+  "joaquinsPackageWatch.promptForUpdate": true,
+  "joaquinsPackageWatch.maximumNumberOfNotification": 10
+}

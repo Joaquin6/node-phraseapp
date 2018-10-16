@@ -1,6 +1,6 @@
 import qs from 'querystring';
 
-const prefix = '/translation_keys';
+const prefix = '/keys';
 
 export default (parent) => {
   const child = {};
@@ -10,7 +10,7 @@ export default (parent) => {
   };
 
   child.post = function keyPost(data, callback) {
-    return parent._postSigned(prefix, { translation_key: data }, callback);
+    return parent._postSigned(prefix, { key: data }, callback);
   };
 
   child.upload = function keysUpload(data, callback) {
@@ -18,7 +18,7 @@ export default (parent) => {
   };
 
   child.patch = function keysPatch(id, data, callback) {
-    return parent._patchSigned(`${prefix}/${id}`, { translation_key: data }, callback);
+    return parent._patchSigned(`${prefix}/${id}`, { key: data }, callback);
   };
 
   child.delete = function keysDelete(id, callback) {
