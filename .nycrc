@@ -1,0 +1,23 @@
+{
+  "check-coverage": true,
+  "per-file": true,
+  "lines": 0,
+  "functions": 0,
+  "branches": 0,
+  "statements": 0,
+  "produce-source-map": true,
+  "include": [
+    "src/**/*.js",
+    "config/**/*.js"
+  ],
+  "exclude": [
+    "test/**/*.spec.js"
+  ],
+  "reporter": [
+    "text",
+    "text-summary"
+  ],
+  "require": [ "babel-register" ],
+  "cache": true,
+  "all": true
+}

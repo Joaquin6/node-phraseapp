@@ -1,5 +1,20 @@
 {
+  "[markdown]": {
+    "editor.wordWrap": "off"
+  },
+  "files.autoSave": "onFocusChange",
+  "eslint.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.autoFixOnSave": true,
+  "eslint.workingDirectories": [
+    "src/**/*.js",
+    "test/**/*.js"
+  ],
+  "eslint.run": "onSave",
+  "eslint.provideLintTask": true,
+  "eslint.options": {
+    "configFile": ".eslintrc"
+  },
   "joaquinsPackageWatch.enable": true,
-  "joaquinsPackageWatch.promptForUpdate": true,
-  "joaquinsPackageWatch.maximumNumberOfNotification": 10
+  "joaquinsPackageWatch.promptForUpdate": true
 }

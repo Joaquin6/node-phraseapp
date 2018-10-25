@@ -1,0 +1,25 @@
+{
+  "extends": ["../.eslintrc"],
+  "plugins": [
+      "mocha"
+  ],
+  "env": {
+      "mocha": true
+  },
+  "globals": {
+      "config": true,
+      "createRandomString": true,
+      "defaultServiceInjections": true,
+      "expect": true,
+      "sinon": true
+  },
+  "rules": {
+      "function-paren-newline": "off",
+      "no-console": "off",
+      "no-underscore-dangle": "off",
+      "mocha/no-exclusive-tests": "error",
+      "mocha/no-identical-title": "error",
+      "mocha/no-nested-tests": "error",
+      "node/no-unpublished-require": "off"
+  }
+}

@@ -1,9 +1,15 @@
 {
-  "extends": "airbnb-base",
-  "plugins": ["standard", "import"],
+  "root": true,
+  "extends": ["airbnb-base"],
+  "plugins": [
+    "node",
+    "standard",
+    "import"
+  ],
   "env": {
+    "es6": true,
     "node": true,
-    "es6": false
+    "commonjs": true
   },
   "rules": {
     "camelcase": "off",
@@ -31,10 +37,13 @@
     "standard/computed-property-even-spacing": [2, "even"]
   },
   "globals": {
+    "td": true,
     "fetch": true,
     "sinon": true,
     "expect": true,
     "request": true,
+    "rmdirAsync": true,
+    "mkdirAsync": true,
     "createRandomString": true
   }
 }

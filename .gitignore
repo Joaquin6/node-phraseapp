@@ -28,3 +28,15 @@ node_modules
 .lock-wscript
 
 lib
+
+.nyc_output
+.env
+docs/
+out/
+lib/
+logs
+build
+
+system-test/secrets.js
+system-test/*key.json
+package-lock.json

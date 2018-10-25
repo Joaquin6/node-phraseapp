@@ -1,5 +1,9 @@
 {
   "recommendations": [
-    "joaquin6.package-watch"
+    "dbaeumer.vscode-eslint",
+    "compulim.vscode-mocha",
+    "joaquin6.package-watch",
+    "maty.vscode-mocha-sidebar",
+    "spoonscen.es6-mocha-snippets"
   ]
 }
